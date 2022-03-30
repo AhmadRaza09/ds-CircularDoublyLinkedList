@@ -6,6 +6,8 @@
 public class CircularDoublyLinkedListDemo
 {
 	
-	public static void main()
-	{}
+	public static void main(String [] args)
+	{
+		CircularDoublyLinkedList l1 = new CircularDoublyLinkedList();
+	}
 }
