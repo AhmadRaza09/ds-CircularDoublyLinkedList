@@ -24,4 +24,45 @@ public class CircularDoublyLinkedList
 		current = null;
 		size = 0;
 	}
+	
+	//add the node in the chain after the current node
+	public void add(int addValue)
+	{
+		DoublyNode newNode = new DoublyNode();
+		newNode.setValue(addValue);
+		
+		if(current == null)
+		{
+			current = newNode;
+			head = newNode;
+			tail = newNode;
+			current.setNext(newNode);
+			current.setPrev(newNode);
+		}
+		else
+		{
+			if(current.getNext() == head)
+			{
+				newNode.setNext(current.getNext());
+				newNode.setPrev(current);
+				current.setNext(newNode);
+				head.setPrev(newNode);
+				current = newNode;
+				tail = current;
+
+			}
+			else
+			{
+				newNode.setNext(current.getNext());
+				newNode.setPrev(current.getNext().getPrev());
+				current.setNext(newNode);
+				newNode.getNext().setPrev(newNode);
+				current = newNode;
+			}
+		}
+		
+		size = size + 1;
+		
+		
+	}
 }

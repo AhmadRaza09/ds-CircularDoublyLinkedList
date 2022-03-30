@@ -9,5 +9,11 @@ public class CircularDoublyLinkedListDemo
 	public static void main(String [] args)
 	{
 		CircularDoublyLinkedList l1 = new CircularDoublyLinkedList();
+		l1.add(3);
+		l1.add(5);
+		l1.add(9);
+		
+		
+		
 	}
 }
