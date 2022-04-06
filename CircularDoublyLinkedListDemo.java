@@ -13,8 +13,11 @@ public class CircularDoublyLinkedListDemo
 		l1.add(5);
 		l1.add(9);
 		
-		
-		System.out.println("Size: " + l1.getSize());
+		l1.update(10);
+		System.out.println("update: " + l1.current.getValue());
+		System.out.println(l1.head.getValue());
+		System.out.println(l1.head.getNext().getValue());
+		System.out.println(l1.head.getNext().getNext().getValue());
 		
 		
 		

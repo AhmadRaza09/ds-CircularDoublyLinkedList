@@ -72,5 +72,14 @@ public class CircularDoublyLinkedList
 		
 	}
 	
+	//update the value on which current node refer
+	public void update(int updateValue)
+	{
+		if(current != null)
+		{
+			current.setValue(updateValue);
+		}
+	}
+	
 	
 }
