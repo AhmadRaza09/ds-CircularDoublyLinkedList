@@ -105,6 +105,31 @@ public class CircularDoublyLinkedList
 		}
 	}
 	
+	//remove all the node from the chain
+	public void clear()
+	{
+		if(current != null)
+		{
+			current = head;
+			do
+			{
+				if(current.getNext() != head)
+				{
+					current.getNext().setPrev(null);
+					current = current.getNext();
+				}
+				
+			}
+			while(current.getNext() != head);
+			head.setPrev(null);
+			tail.setNext(null);
+			head = null; 
+			tail = null;
+			current = null;
+			size = 0;
+		}
+	}
+	
 	//get the value where current node piont, if current node is null then throws ListEmptyException
 	public int get() throws ListEmptyException
 	{

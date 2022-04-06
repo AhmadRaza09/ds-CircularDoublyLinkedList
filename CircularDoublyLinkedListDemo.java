@@ -11,11 +11,8 @@ public class CircularDoublyLinkedListDemo
 		CircularDoublyLinkedList l1 = new CircularDoublyLinkedList();
 		l1.add(1);
 		l1.add(2);
+		l1.clear();
 		
-		if(l1.find(2))
-		{
-			System.out.println(l1.get());
-		}
 		
 		
 		
