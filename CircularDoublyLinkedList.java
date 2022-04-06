@@ -72,6 +72,51 @@ public class CircularDoublyLinkedList
 		
 	}
 	
+	//remove the current node from the chain
+	public void remove()
+	{
+			//if list is empty then nothing to do
+			if(current != null)
+			{
+				//if size is 1 then is mean only one nonde in chain so set all refrences to null
+				if(size == 1)
+				{
+					head.setPrev(null);
+					tail.setNext(null);
+					head = null;
+					current = null;
+					tail = null;
+				}
+				else
+				{
+					if(head == current)
+					{
+						current.getNext().setPrev(current.getPrev());
+						current = current.getNext();
+						tail.setNext(current);
+						head = current;
+					}
+					else if(tail == current)
+					{
+						current = current.getPrev();
+						current.setNext(head);
+						tail = current;
+						head.setPrev(tail);
+					}
+					else
+					{
+						current.getNext().setPrev(current.getPrev());
+						current.getPrev().setNext(current.getNext());
+						current = current.getPrev();
+					}
+					
+					
+				}
+				
+				//decrease chain size;
+				size = size - 1;
+			}
+	}
 	
 	//find the value if find then point current to that node
 	public boolean find(int findValue)
