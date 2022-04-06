@@ -25,6 +25,12 @@ public class CircularDoublyLinkedList
 		size = 0;
 	}
 	
+	//return the size of the chain
+	public int getSize()
+	{
+		return size;
+	}
+	
 	//add the node in the chain after the current node
 	public void add(int addValue)
 	{
@@ -65,4 +71,6 @@ public class CircularDoublyLinkedList
 		
 		
 	}
+	
+	
 }

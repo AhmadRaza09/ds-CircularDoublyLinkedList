@@ -14,6 +14,9 @@ public class CircularDoublyLinkedListDemo
 		l1.add(9);
 		
 		
+		System.out.println("Size: " + l1.getSize());
+		
+		
 		
 	}
 }
