@@ -160,5 +160,11 @@ public class CircularDoublyLinkedList
 		return false;
 	}
 	
+	//piont the current to the head
+	public void start()
+	{
+		current = head;
+	}
+	
 	
 }
