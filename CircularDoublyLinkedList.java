@@ -166,5 +166,11 @@ public class CircularDoublyLinkedList
 		current = head;
 	}
 	
+	//point the current to the tail
+	public void tail()
+	{
+		current = tail;
+	}
+	
 	
 }

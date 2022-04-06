@@ -12,6 +12,7 @@ public class CircularDoublyLinkedListDemo
 		l1.add(1);
 		l1.add(2);
 		l1.start();
+		l1.tail();
 		System.out.println(l1.get());
 		l1.next();
 		System.out.println(l1.get());
