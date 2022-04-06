@@ -172,5 +172,22 @@ public class CircularDoublyLinkedList
 		current = tail;
 	}
 	
+	//move the current reference to the back node in the chain
+	public boolean back()
+	{
+		
+		
+		if(head != null)
+		{
+			
+			current = current.getPrev();
+			return true;
+			
+		}
+	
+		//if current is not connected to the next node then return false
+		return false;
+	}
+	
 	
 }

@@ -11,12 +11,13 @@ public class CircularDoublyLinkedListDemo
 		CircularDoublyLinkedList l1 = new CircularDoublyLinkedList();
 		l1.add(1);
 		l1.add(2);
+		l1.add(3);
 		l1.start();
-		l1.tail();
+		l1.back();
 		System.out.println(l1.get());
-		l1.next();
+		l1.back();
 		System.out.println(l1.get());
-		l1.next();
+		l1.back();
 		System.out.println(l1.get());
 		
 		
