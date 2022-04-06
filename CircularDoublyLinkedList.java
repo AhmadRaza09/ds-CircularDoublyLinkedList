@@ -142,5 +142,23 @@ public class CircularDoublyLinkedList
 		
 	}
 	
+		//traversing list operation
+	
+	//move the current reference to the next node in the chain
+	public boolean next()
+	{
+		
+		
+		if(head != null)
+		{
+			
+			current = current.getNext();
+			return true;
+		}
+	
+		//if current is not connected to the next node then return false
+		return false;
+	}
+	
 	
 }
