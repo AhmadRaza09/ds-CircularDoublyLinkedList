@@ -9,9 +9,14 @@ public class CircularDoublyLinkedListDemo
 	public static void main(String [] args) throws ListEmptyException
 	{
 		CircularDoublyLinkedList l1 = new CircularDoublyLinkedList();
+		l1.add(1);
+		l1.add(2);
 		
+		if(l1.find(2))
+		{
+			System.out.println(l1.get());
+		}
 		
-		System.out.println(l1.get());
 		
 		
 		
